@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Support_Buoi1&apos; to &apos;SupportJavaPublic&apos;" description="Rename resource &apos;Support_Buoi1&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Support_Buoi1" name="SupportJavaPublic" stamp="1752483861298" updateReferences="true"/>
+</session>
