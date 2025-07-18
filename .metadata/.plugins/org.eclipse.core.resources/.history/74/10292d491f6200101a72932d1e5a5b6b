@@ -1,0 +1,23 @@
+package Buoi1;
+import java.util.Scanner;
+
+public class Main {
+	public static Scanner sc = new Scanner(System.in);
+
+	public static void main(String[] args) {
+		while(true) {
+			System.out.println("b co muon thoat khong? ");
+			String c = sc.nextLine();
+			switch(c) {
+				case "y":
+					System.exit(0);
+				default:
+					break;
+			}
+				
+		}
+		
+		
+	}
+
+}

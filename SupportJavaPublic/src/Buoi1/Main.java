@@ -5,19 +5,29 @@ public class Main {
 	public static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
-		while(true) {
-			System.out.println("b co muon thoat khong? ");
-			String c = sc.nextLine();
-			switch(c) {
-				case "y":
-					System.exit(0);
-				default:
-					break;
-			}
-				
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		int[] a = new int[n];
+		for(int i = 0; i< n; i++) {
+			a[i] = sc.nextInt();
 		}
-		
-		
+		System.out.println("mang ban dau la: ");
+		for(int i = 0; i< n; i++) {
+			System.out.print(a[i] +  " ");
+		}
+		System.out.println();
+		int tong = 0;
+		for(int i = 0; i< n; i++) {
+			tong += a[i];
+		}
+		System.out.println("tong cac phan tu trong mang la: " + tong);
+		int max = a[0];
+		for(int i = 0; i< n; i++) {
+			if(a[i] >= max) {
+				max = a[i];
+			}
+		}
+		System.out.println("phan tu lon nhat trong mang la: " + max);
 	}
 
 }

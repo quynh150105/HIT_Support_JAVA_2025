@@ -1,0 +1,18 @@
+package BaiTapVeNhaBuoi1;
+
+public class SinhVien {
+	private String name;
+	private int age;
+	private double gpa;
+	
+	public SinhVien() {
+		
+	}
+	
+	public SinhVien(String name, int age, double gpa) {
+		this.age= age;
+		this.name = name;
+		this.gpa = gpa;
+	}
+
+}

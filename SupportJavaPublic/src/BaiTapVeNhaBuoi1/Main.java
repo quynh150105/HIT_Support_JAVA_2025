@@ -1,0 +1,57 @@
+package BaiTapVeNhaBuoi1;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Main {
+	static Scanner sc = new Scanner(System.in);
+	
+	public static class Student{
+		String name;
+		int age;
+		double gpa;	
+	}
+	
+	public static void main(String[] args) {
+		System.out.print("nhap vao so luong sinh vien: ");
+		int n = sc.nextInt();
+		sc.nextLine();
+		
+		Student[] sv = new Student[n];
+		
+		for(int i = 0; i< n; i++) {
+			System.out.println("nhap thong tin sinh vien thu " + (i+1) );
+			sv[i] = new Student();
+			System.out.println("nhap ten: ");
+			sv[i].name = sc.nextLine();
+			System.out.println("nhap tuoi: ");
+			sv[i].age = sc.nextInt();
+			sc.nextLine();
+			System.out.println("nhap GPA: ");
+			sv[i].gpa = sc.nextDouble();
+			sc.nextLine();
+		}
+		
+		for(int i = 0; i< n; i++) {
+			System.out.println("ten: " + sv[i].name + " tuoi: " + sv[i].age + " gpa: " + sv[i].gpa); 
+		}
+		double tong = 0;
+		for(int i = 0; i< n; i++) {
+			tong += sv[i].gpa;
+		}
+		
+		System.out.println("diem trung binh ca lop la: " + tong/n);
+		
+		double max = sv[0].gpa;
+		int index = 0;
+		for(int i = 0; i< n; i++) {
+			if(sv[i].gpa > max) {
+				index = i;
+			}
+		}
+		System.out.println("sinh vien co diem cao nhat la: ");
+		System.out.println("ten: " + sv[index].name + " tuoi: " + sv[index].age + " gpa: " + sv[index].gpa); 
+
+	}
+
+}
